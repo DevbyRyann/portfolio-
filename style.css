@@ -1,0 +1,339 @@
+@font-face {
+    font-family: 'cyber';
+    src: url('BionicalDemo-8MJ5A.ttf') format('woff2'),
+}
+
+@font-face {
+  font-family: 'cyber2';
+  src: url('SpaceMonkeyBold-Ea5On.otf');
+}
+
+@font-face {
+  font-family: 'cyber3';
+  src: url('CYBERBANG.ttf');
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: black;
+}
+
+#about {
+
+    text-align: center;
+    font-family: 'cyber';
+    color: #6300aa;
+
+}
+
+.centralizar-imagem {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%; /* ou o tamanho que preferir, mas isso tornará a imagem com largura até 50% do seu container e a centralizará */
+}
+
+nav.navbar {
+    display: flex;
+    justify-content: center;
+    background: black;
+    color: #fff;
+    padding: 1rem;
+}
+
+.navbar a {
+    font-family: 'cyber';
+    color: #6300aa; /* Cor da fonte adaptada para #6300aa */
+    text-decoration: none;
+    margin: 0 15px;
+    text-shadow:
+        0 0 5px #6300aa,
+        0 0 10px #6300aa,
+        0 0 20px #6300aa,
+        0 0 40px #6300aa; /* Efeito neon adaptado para a cor #6300aa */
+    transition: text-shadow 0.5s ease;
+}
+
+.navbar a:hover {
+    text-shadow:
+        0 0 5px #8a2be2,
+        0 0 10px #8a2be2,
+        0 0 20px #8a2be2,
+        0 0 40px #8a2be2,
+        0 0 80px #8a2be2; /* Efeito neon mais intenso no hover */
+}
+
+
+section {
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.skills-container {
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.progress-bar {
+  height: 10px;
+  width: 0;
+  background-color: #6300aa;
+  border-radius: 10px;
+  transition: width 2s;
+}
+
+.progress-container {
+  width: 90%; /* Reduzir se necessário para garantir meio */
+  height: 20px; /* Pode ajustar para dar mais espaço */
+  margin: 20px auto; /* Centraliza e dá mais espaço em volta */
+  border-radius: 5px;
+  background-color: #f3f3f3;
+  overflow: hidden;
+}
+
+
+.skill:hover .progress-bar {
+  width: 100%; /* Faz com que a barra cresça até o valor desejado */
+}
+
+.skill {
+  flex: 1;
+  margin: 0 20px;
+  margin-bottom: 40px; /* Aumentar para dar mais espaço entre habilidades */
+  /* Se necessário, ajustar os paddings */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill p {
+  margin-top: 15px; /* Aumentar se necessário para dar espaço entre a barra e a descrição */
+  /* Outras propriedades permanecem iguais */
+  font-family: 'cyber';
+  color: #6300aa;
+}
+
+
+.skill label {
+  display: block;
+  font-family: 'cyber', Arial, sans-serif;
+  margin-bottom: 5px;
+  color: #6300aa;
+  text-shadow: 0 0 5px #6300aa;
+  font-size: 0.8rem; /* Diminui o tamanho da fonte dos rótulos */
+}
+
+progress {
+  width: 100%;
+  height: 10px; /* Torna a altura das barras de progresso menor */
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.progress-container {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #222;
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #6300aa;
+  border-radius: 10px;
+}
+
+progress::-moz-progress-bar {
+  background-color: #6300aa;
+  border-radius: 10px;
+}
+
+/* Adiciona porcentagem à frente da barra */
+.progress-percentage {
+  display: block; /* Exibe como bloco para garantir que apareça em uma nova linha */
+  text-align: center; /* Centraliza o texto abaixo da barra */
+  margin-top: 5px; /* Adiciona um espaço entre a barra de progresso e a porcentagem */
+  font-size: 27px; /* Ajuste conforme necessário */
+  font-weight: bold; /* Opção para destacar */
+  color: #6300aa; /* Ajuste a cor conforme desejado */
+  font-family: 'cyber3';
+}
+
+.skill label, .skill-percentage {
+  font-family: 'cyber', Arial, sans-serif;
+  color: #6300aa;
+  text-shadow: 0 0 5px #6300aa;
+  font-size: 0.8rem;
+}
+
+.skill-image {
+  width: 100px; /* ou qualquer tamanho que se encaixe bem */
+  height: auto;
+  display: block; /* Garante que a imagem fique acima do texto */
+  margin: 0 auto 10px; /* Centraliza a imagem e adiciona um espaço antes do texto */
+}
+
+.progress-bar-liquid {
+  position: relative;
+  height: 100%;
+  width: 0;
+  background-color: #6300aa;
+  border-radius: 10px;
+  overflow: hidden;
+  animation: fillBar 3s forwards;
+}
+
+.progress-bar-liquid::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.5);
+  background: -webkit-gradient(linear, left top, right top, color-stop(25%, rgba(255, 255, 255, 0.5)), color-stop(50%, rgba(255, 255, 255, 0)), color-stop(75%, rgba(255, 255, 255, 0.5)));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.5) 75%);
+  z-index: 1;
+  animation: moveWave 2s linear infinite;
+}
+
+@keyframes moveWave {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes fillBar {
+  from { width: 0; }
+  to { width: var(--bar-width); }
+}
+
+.titulo-habilidades {
+  text-align: center;
+  color: #6300aa;
+  font-family: 'cyber', sans-serif; /* Escolha a fonte */
+  font-size: 24px; /* Tamanho da Fonte */
+  margin-top: 20px; /* Espaço no topo */
+  margin-bottom: 20px; /* Espaço na parte inferior */
+}
+
+#projects {
+  text-align: center;
+  color: #6300aa;
+  font-family: 'cyber', sans-serif; /* Escolha a fonte */
+  font-size: 24px; /* Tamanho da Fonte */
+  margin-top: 20px; /* Espaço no topo */
+  margin-bottom: 20px; /* Espaço na parte inferior */
+}
+
+.carousel {
+  position: relative;
+  max-width: 600px; /* Ajuste a largura máxima conforme necessário */
+  margin: auto;
+  overflow: hidden;
+  box-shadow:
+      0 0 5px #6300aa,
+      0 0 10px #6300aa,
+      0 0 20px #6300aa,
+      0 0 40px #6300aa,
+      0 0 80px #6300aa; /* Efeito neon */
+      animation: neonPulse 2s infinite ease-in-out;
+}
+
+.carousel:hover {
+  box-shadow:
+      0 0 10px #8a2be2,
+      0 0 20px #8a2be2,
+      0 0 40px #8a2be2,
+      0 0 80px #8a2be2,
+      0 0 160px #8a2be2; /* Efeito neon mais intenso no hover */
+}
+
+@keyframes neonPulse {
+  0%, 100% {
+      box-shadow:
+          0 0 5px #6300aa,
+          0 0 10px #6300aa,
+          0 0 20px #6300aa,
+          0 0 40px #6300aa;
+  }
+  50% {
+      box-shadow:
+          0 0 10px #8a2be2,
+          0 0 20px #8a2be2,
+          0 0 40px #8a2be2,
+          0 0 80px #8a2be2;
+  }
+}
+  
+  .carousel-items .carousel-item {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .carousel-items .carousel-item.active {
+    position: relative;
+    opacity: 1;
+  }
+  
+  .carousel img {
+    width: 100%;
+    display: block;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: white;
+    font-size: 24px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* Estilo para facilitar a troca de slides */
+  .carousel:hover .prev, .carousel:hover .next {
+    visibility: visible;
+  }
+
+  #contact {
+
+    text-align: center;
+    font-family: 'cyber';
+
+  }
+
+  #contact h2 {
+
+    color: #6300aa;
+
+  }
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: white;
+}
+/* Adicione mais estilizações conforme necessário */

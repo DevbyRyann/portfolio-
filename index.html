@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <html lang="pt">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Meu Portfólio</title>
+            <!-- Incorporar CSS do Bootstrap -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        </head>
+        <body>
+        
+        <header id="home">
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#skills">Habilidades</a>
+                <a href="#projects">Projetos</a>
+                <a href="#contact">Contato</a>
+            </nav>
+        </header>
+        
+        <section id="about">
+            <h2>Olá, me chamo monte</h2>
+            <p>Bem-vindo(a) ao meu portfólio digital, esse e um projeto que estou fazendo para o meu curso tecnico,<br> entao essa e primeira versao do portfolio, ao passar do curso eu vou incrementando mais funcionalidades e polindo mais o site e o codigo, meta no momento e dominar o js e ter uma grande noçao de reactjs</p>
+            <img src="computador com fundo transparente.gif">
+        </section>
+        
+        <section id="skills">
+            <h1 class="titulo-habilidades">HABILIDADES</h1>
+            <div class="skills-container">
+                <div class="skill">
+                    <img src="html roxao.png" alt="HTML" class="skill-image">
+                    <label for="html">HTML</label>
+                    <div class="progress-container">
+                        <div class="progress-bar-liquid" data-value="90"></div>
+                    </div>
+                    <div class="progress-bar-wave"></div>
+                    <span class="progress-percentage">90%</span>
+                    <p>HTML é a base para criar páginas na web, permitindo estruturar conteúdo e links.</p>
+                </div>
+                <div class="skill">
+                    <img src="css roxao.png" alt="CSS" class="skill-image">
+                    <label for="css">CSS</label>
+                    <div class="progress-container">
+                        <div class="progress-bar-liquid" data-value="85"></div>
+                    </div> 
+                    <div class="progress-bar-wave"></div>
+                    <span class="progress-percentage">85%</span>
+                    <p>CSS estiliza a aparência do site, possibilitando design responsivo e visualmente atraente.</p>
+                </div>
+                <div class="skill">
+                    <img src="js roxao.png" alt="JavaScript" class="skill-image">
+                    <label for="javascript">JavaScript</label>                
+                    <div class="progress-container">
+                        <div class="progress-bar-liquid" data-value="80"></div>
+                    </div>
+                    <div class="progress-bar-wave"></div>
+                    <span class="progress-percentage">80%</span>
+                    <p>JavaScript adiciona interatividade às páginas, tornando a experiência do usuário mais dinâmica.</p>
+                </div>
+                </div>
+            </div>
+            <img class="centralizar-imagem" src="habilidades.gif" alt="Minhas habilidades">
+        </section>
+        
+        <!-- Atualização da Seção de Projetos com o Carrossel -->
+        <section id="projects">
+            <h2>Projetos</h2>
+        
+            <!-- Aqui vai o carrossel com GIFs clicáveis -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+             <ol class="carousel-indicators">
+               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+             </ol>
+             <div class="carousel-inner">
+               <div class="carousel-item active">
+                 <a href="https://devbyryann.github.io/calculadora-01/">
+                   <img class="d-block w-100" src="calculadora.gif" alt="Primeiro Slide">
+                 </a>
+               </div>
+               <div class="carousel-item">
+                 <a href="https://devbyryann.github.io/koopa-fluppa-/">
+                   <img class="d-block w-100" src="koopa.gif" alt="Segundo Slide">
+                 </a>
+               </div>
+               <div class="carousel-item">
+                 <a href="URL_PARA_ONDE_O_GIF_3_DEVE_REDIRECIONAR">
+                   <img class="d-block w-100" src="CAMINHO_PARA_SEU_TERCEIRO_GIF" alt="Terceiro Slide">
+                 </a>
+               </div>
+             </div>
+             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="sr-only">Anterior</span>
+             </a>
+             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="sr-only">Próximo</span>
+             </a>
+            </div>
+        </section>
+        
+        <section id="contact">
+          <h2>Contato</h2>
+          <div class="contact-methods">
+              <a href="mailto:ryannkaue0@gmail.com" class="contact-link">
+                  <i class="fas fa-envelope"></i> ryannkaue0@gmail.com
+              </a>
+              <a href="https://www.linkedin.com/in/seu-perfil/" class="contact-link">
+                  <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+              <a href="https://github.com/DevbyRyann" class="contact-link">
+                  <i class="fab fa-github"></i> GitHub
+              </a>
+          </div>
+      </section>
+        <footer>
+            <p>&copy; [2024] [Ryann monte]. Todos os direitos reservados.</p>
+        </footer>
+        
+        <!-- Incorporar os arquivos JS do Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var progressBars = document.querySelectorAll('.progress-bar');
+                progressBars.forEach(function(bar) {
+                    let value = bar.getAttribute('data-value');
+                    bar.style.width = value + '%';
+                });
+            });
+            </script>
+
+        </body>
+        </html>
